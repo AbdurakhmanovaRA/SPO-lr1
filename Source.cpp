@@ -1,4 +1,4 @@
-#define WINVER 0x0502
+п»ї#define WINVER 0x0502
 #include <windows.h>
 #include <stdio.h>
 #include <tchar.h>
@@ -22,11 +22,11 @@ void counter()
     tick1 = CNT.QuadPart;
     QueryPerformanceFrequency(&CNT);
     freq = double(CNT.QuadPart);
-    printf("Рабочая частота ЦП: %u Hz \n", CNT);
+    printf("Р Р°Р±РѕС‡Р°СЏ С‡Р°СЃС‚РѕС‚Р° Р¦Рџ: %u Hz \n", CNT);
 
 }
 
-//2.2 время выполнения пункта 2.1
+//2.2 РІСЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ РїСѓРЅРєС‚Р° 2.1
 double tickCount()
 {
     LARGE_INTEGER CNT;
@@ -148,7 +148,7 @@ int main()
 
     counter();
     double t = tickCount();
-    printf("Количество тактов ЦП потраченных на выполнение пункта 2.1: %f мкс\n", t);
+    printf("РљРѕР»РёС‡РµСЃС‚РІРѕ С‚Р°РєС‚РѕРІ Р¦Рџ РїРѕС‚СЂР°С‡РµРЅРЅС‹С… РЅР° РІС‹РїРѕР»РЅРµРЅРёРµ РїСѓРЅРєС‚Р° 2.1: %f РјРєСЃ\n", t);
     return 0;
 
 }
