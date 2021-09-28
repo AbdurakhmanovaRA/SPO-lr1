@@ -105,7 +105,6 @@ int main()
     }
     RegCloseKey(hKey);
 
-    //CPU performance measurement
 
     counter();
     return 0;
