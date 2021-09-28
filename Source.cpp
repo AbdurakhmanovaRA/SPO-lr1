@@ -8,8 +8,6 @@
 using namespace std;
 
 #define INFO_BUF_SIZE 32767
-#define BUFSIZE MAX_PATH
-#define FILESYSNAMEBUFSIZE MAX_PATH
 #define TOTALBYTES 8192
 
 //2.1, 2.2
@@ -23,7 +21,7 @@ void counter()
     QueryPerformanceCounter(&tick2);
     double count = (double(tick2.QuadPart - tick1.QuadPart) * 1000000 / freq.QuadPart);
     printf("Рабочая частота ЦП: %u Hz \n", freq);
-    printf("Количество тактов ЦП потраченных на выполнение пункта 2.1: %f мкс\n", count);
+    printf("Количество тактов ЦП потраченных на выполнение пункта 2.1: %1.1f мкс\n", count);
 
 }
 
